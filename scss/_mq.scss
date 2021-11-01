@@ -1,0 +1,33 @@
+/* ---MQ INDEX--- */
+
+@media only screen and (max-width: 970px) {
+    .header__logo {
+        text-align: left;
+        margin: 5rem auto;
+        height: 10rem;
+    }
+    .logo {
+        width: 15rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    .tresColumnas {
+        display: block;
+    }
+    .lugares {
+        width: 45rem;
+        height: 40rem;
+    }
+    .introLugares {
+        width: auto;
+        text-align:inherit;
+    }
+    footer{
+        display: inline-block;
+        text-align: center;
+    }
+    .navFooter {
+        font-size: 0.1rem;
+    }
+}

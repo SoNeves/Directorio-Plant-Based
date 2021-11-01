@@ -1,0 +1,520 @@
+/* #004a26 texto - #fff6c9 background - #499e8d y #85cc9f- complementarios  */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+/*----------RESETEO---------- */
+
+* {
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff6c9;
+}
+
+
+/* ----------GENERALES---------- */
+
+h1 {
+    display: inline-block;
+    font-size: 7rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+h4 {
+    color: #004a26;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* ----------HEADER---------- */
+
+header {
+    grid-area: header;
+}
+
+.logo {
+    width: 30rem;
+    display: inline-block;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+header nav {
+    margin-bottom: 1rem;
+}
+
+.alinearLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    height: 15rem;
+}
+
+/* ----------MENÚ NAVEGADOR---------- */
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    list-style-type: lower-latin;
+    color: #3e8362;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 8px;
+    text-align: left;
+}
+
+li a:hover {
+    transform: scale(1.3);
+    color: #004a26;
+    font-weight: 400;
+}
+
+
+/* ----------TÍTULOS---------- */
+
+.titulo {
+    color: #004a26;
+    font-size: 2rem;
+}
+
+
+/* ----------INDEX---------- */
+
+.presentacion {
+    background-color: #85cc9f;
+    font-size: 2rem;
+    grid-area: presentacion;
+    text-align: center;
+}
+
+.lugares {
+    width: 55rem;
+    height: 40rem;
+    border: solid 2px #004a26;
+    border-radius: 20px;
+    display: block;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "titulo titulo" "imagen texto" "boton boton";
+}
+
+.introLugares {
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    width: 25rem;
+    height: 30rem;
+    text-align: justify;
+    grid-area: texto;
+}
+
+.lugares img {
+    width: 25rem;
+    height: 30rem;
+    border-radius: 20px;
+    margin: 1rem;
+    grid-area: imagen;
+}
+
+.lugares .titulo {
+    text-align: center;
+    letter-spacing: 3px;
+    grid-area: titulo;
+}
+
+.titulo a {
+    font-weight: bold;
+}
+
+.titulo a:hover {
+    color: #004a26;
+}
+
+main {
+    grid-area: main;
+}
+
+
+/* ----------MEDIA QUERY---------- */
+
+@media only screen and (max-width:768px) {
+    
+}
+
+@media only screen and (max-width:320px) {
+    
+}
+
+
+/* ----------BOTONES---------- */
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    background-image: linear-gradient(to left, #158055,#0f473c);
+    color: #fff6c9;
+    width: 20rem;
+    border-radius: 10px;
+    grid-area: boton;
+    margin: auto;
+}
+
+.lugares button {
+    width: 20rem;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+/* ----------DIRECTORIO---------- */
+
+.lugares p {
+    overflow: hidden;
+}
+
+
+/* COLUMNAS DIRECTORIO/INDEX */
+
+.tresColumnas {
+    display: grid;
+    grid-template-areas:
+    "columnauno columnados columnatres"
+    "columna1 columna2 columnatres"
+    "columna-1 columna-2 columnatres"
+    ;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+.columnaUno {
+    grid-area: columnauno;
+}
+
+.columna1 {
+    grid-area: columna1;
+}
+
+.columna-1 {
+    grid-area: columna-1;
+}
+
+.columnaDos {
+    grid-area: columnados;
+}
+
+.columna2 {
+    grid-area: columna2;
+}
+
+.columna-2 {
+    grid-area: columna-2;
+}
+
+.columnaTres {
+    grid-area: columnatres;
+}
+
+
+/* ----------ARTÍCULOS BLOG---------- */
+
+article {
+    width: auto;
+    height: 50rem;
+    text-align: center;
+    font-size: 2rem;
+    border: solid 2px #004a26;
+    border-radius: 20px;
+    margin: 1rem;
+
+}
+
+article p {
+    font-size: 1.5rem;
+    display: inline-block;
+    color: #004a26;
+    overflow: hidden;
+}
+
+article img {
+    width: 45rem;
+    height: 30rem;
+    border-radius: 20px;
+}
+
+.seccionBlog {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+
+/* ----------SOBRE MÍ---------- */
+
+.sobreMi {
+    width: 90rem;
+    height: 48rem;
+    text-align: center;
+    padding: 5px;
+    margin: 5rem auto 5rem auto ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreMi p {
+    font-size: 2rem;
+    border: solid 2px #3e8362;
+    border-radius: 5%;
+    padding: 1rem;
+}
+
+.sobreMi img {
+    width: 30rem;
+    height: 45rem;
+    border-radius: 20px;
+    margin: 0 3rem;
+}
+
+
+/* ----------BARRIOS---------- */
+
+.costado {
+    font-size: 2rem;
+    grid-area: columnatres;
+}
+
+.costado select {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    background-color: #004a26;
+    color: #fff6c9;
+    padding: 4px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+
+/* ----------CONTACTO---------- */
+
+
+/*  bootstrap */
+.container-fluid {
+    flex-direction: column;
+}
+
+.form-control {
+    border-radius: 20rem;
+    font-size: 1.5rem;
+    width: auto;
+}
+/* bootstrap */
+
+.contacto {
+    font-size: 2rem;
+    margin: 2rem 20rem;
+    text-align: center;
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.textarea {
+    border-radius: 2rem; 
+    width: 70rem;
+    margin: auto;
+}
+
+
+/* ----------FOOTER---------- */
+
+footer {
+    background-color: #3e8362;
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "news nav" "copy copy";
+    padding: 0 1rem;
+    bottom: 0;
+}
+
+.contactoFooter{
+    position: fixed;
+}
+
+.alinear {
+    display: flex;
+    flex-direction: row;
+}
+
+.navFooter {
+    color: #fff6c9;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.navFooter a {
+    color: #fff6c9;
+    align-items: flex-end;
+}
+
+footer .news {
+    font-size: 2rem;
+    color: #fff6c9;
+}
+
+.news input {
+    display: inline-block;
+}
+
+.news h3 {
+    font-size: 2rem;
+}
+
+.copy {
+    color: #fff6c9;
+    font-size: 2rem;
+    justify-content: center;
+    margin: auto;
+    grid-area: copy;
+}
+
+input:hover {
+    transform: scale(1.1);
+}
+
+/* ----------MQ INDEX---------- */
+
+@media (max-width: 970px) {
+    .alinearLogo {
+        text-align: left;
+        margin: 5rem auto;
+        height: 10rem;
+    }
+    .logo {
+        width: 15rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    .tresColumnas {
+        display: block;
+    }
+    .lugares {
+        width: 45rem;
+        height: 40rem;
+    }
+    .introLugares {
+        width: auto;
+        text-align:inherit;
+    }
+    footer{
+        display: inline-block;
+        text-align: center;
+    }
+    .navFooter {
+        font-size: 0.1rem;
+    }
+}
+
+/* ----------CUMPLE CONSIGNAS---------- */
+
+.cumpleConsignas {
+    font-size: 2rem;
+}
+
+table {
+    background: orange;
+}
+
+table th {
+    color: white;
+}
+
+.tarea {
+    color: #0033ff;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 12px;
+    width: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu {
+    font-size: 0;
+    text-transform: uppercase;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+}
+
+.submenu li {
+    display: block;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.cuadrado {
+    border: 1px solid black;
+    background-color: rgb(161, 21, 189);
+    width: 100px;
+    height: 100px;
+}
+
+.cuadrado:hover {
+    transform: rotate(50deg) skew(25deg);
+}
+
+.navbar {
+    background-color:#fff6c9;
+    list-style-type: lower-latin;
+    color: #3e8362;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 8px;
+}
+
+.navbar a:hover {
+    transform: scale(1.3);
+    color: #004a26;
+    font-weight: 400;
+}

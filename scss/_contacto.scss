@@ -1,0 +1,29 @@
+.container-fluid {
+    flex-direction: column;
+}
+
+.form-control {
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    width: auto;
+    margin: auto;
+}
+
+.contacto {
+    font-size: 2rem;
+    margin: 2rem 20rem;
+    text-align: center;
+    
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+textarea {
+    border-radius: 2rem; 
+    width: 70rem;
+    margin: auto;
+    text-align: center;
+}  

@@ -1,0 +1,60 @@
+.presentacion {
+    background-color: $color_dos;
+    font-size: 2rem;
+    grid-area: presentacion;
+    text-align: center;
+}
+
+.articulos__lugares {
+    width: 55rem;
+    height: 40rem;
+    border: solid 2px $textos;
+    border-radius: 20px;
+    display: block;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "titulo titulo" "imagen texto" "boton boton";
+    
+    img{
+        width: 25rem;
+        height: 30rem;
+        border-radius: 20px;
+        margin: 1rem;
+        grid-area: imagen;
+    }
+    
+    .articulos__titulo {
+        text-align: center;
+        letter-spacing: 3px;
+        grid-area: titulo; 
+        
+        a{
+            font-weight: bold;
+            
+            &:hover {color: $textos;}
+        }
+    }
+    
+    button {
+        width: 20rem;
+    }
+    
+    .articulos__parrafo {
+        overflow: hidden;
+    }
+}
+
+.articulos__parrafo {
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    width: 25rem;
+    height: 30rem;
+    text-align: justify;
+    grid-area: texto;
+}
+
+main {
+    grid-area: main;
+}
