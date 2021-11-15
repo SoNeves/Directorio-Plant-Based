@@ -1,9 +1,14 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
 .presentacion {
   background-color: #85cc9f;
-  font-size: 2rem;
-  grid-area: presentacion;
-  text-align: center; }
+  font-size: 1.5rem;
+  text-align: center;
+  width: 95%;
+  margin-left: 3rem; }
+
+.articulos {
+  margin-top: 15vh; }
 
 .articulos__lugares {
   width: 55rem;
@@ -23,7 +28,9 @@
   .articulos__lugares .articulos__titulo {
     text-align: center;
     letter-spacing: 3px;
-    grid-area: titulo; }
+    grid-area: titulo;
+    color: #004a26;
+    font-size: 2rem; }
     .articulos__lugares .articulos__titulo a {
       font-weight: bold; }
       .articulos__lugares .articulos__titulo a:hover {
@@ -90,12 +97,14 @@ main {
 
 .contacto {
   font-size: 2rem;
-  margin: 2rem 20rem;
+  margin: 2rem 20rem 10rem;
   text-align: center; }
   .contacto h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: 500; }
+  .contacto input {
+    display: inline-block; }
 
 textarea {
   border-radius: 2rem;
@@ -112,7 +121,7 @@ textarea {
   border-radius: 20px;
   margin: 1rem; }
   .blog__articulos .articulos__parrafo {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     display: inline-block;
     color: #004a26;
     overflow: hidden;
@@ -127,29 +136,36 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, 2fr); }
 
-/* ---MQ INDEX--- */
-@media only screen and (max-width: 970px) {
-  .header__logo {
-    text-align: left;
-    margin: 5rem auto;
-    height: 10rem; }
-  .logo {
-    width: 15rem; }
-  h1 {
-    font-size: 5rem; }
-  .tresColumnas {
-    display: block; }
-  .lugares {
-    width: 45rem;
-    height: 40rem; }
-  .introLugares {
-    width: auto;
-    text-align: inherit; }
-  footer {
-    display: inline-block;
-    text-align: center; }
-  .navFooter {
-    font-size: 0.1rem; } }
+/*---COLUMNAS DIRECTORIO/INDEX---*/
+.articulos {
+  display: grid;
+  grid-template-areas: "columnauno columnados columnatres" "columna1 columna2 columnatres" "columna-1 columna-2 columnatres";
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: auto auto; }
+
+.columnaUno {
+  grid-area: columnauno; }
+
+.columna1 {
+  grid-area: columna1; }
+
+.columna-1 {
+  grid-area: columna-1; }
+
+.columnaDos {
+  grid-area: columnados; }
+
+.columna2 {
+  grid-area: columna2; }
+
+.columna-2 {
+  grid-area: columna-2; }
+
+.columnaTres {
+  grid-area: columnatres; }
+
+.columna3 {
+  grid-area: columna3; }
 
 /* ----------GENERALES---------- */
 * {
@@ -188,11 +204,6 @@ header {
   font-weight: bold;
   color: #004a26; }
 
-.logo {
-  width: 30rem;
-  display: inline-block;
-  text-align: center; }
-
 .header__logo {
   display: flex;
   flex-direction: row;
@@ -200,13 +211,13 @@ header {
   margin-left: 20rem;
   margin-top: 2rem;
   height: 15rem; }
-
-.articulos__titulo {
-  color: #004a26;
-  font-size: 2rem; }
+  .header__logo .logo {
+    width: 30rem;
+    display: inline-block;
+    text-align: center; }
 
 /*---BOTONES---*/
-button {
+.button {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
   text-align: center;
@@ -216,7 +227,7 @@ button {
   border-radius: 10px;
   grid-area: boton;
   margin: auto; }
-  button:hover {
+  .button:hover {
     transform: scale(1.1); }
 
 /*---LISTA NAV---*/
@@ -276,76 +287,7 @@ footer {
 input:hover {
   transform: scale(1.1); }
 
-/*---COLUMNAS DIRECTORIO/INDEX---*/
-.articulos {
-  display: grid;
-  grid-template-areas: "columnauno columnados columnatres" "columna1 columna2 columnatres" "columna-1 columna-2 columnatres";
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: auto; }
-
-.columnaUno {
-  grid-area: columnauno; }
-
-.columna1 {
-  grid-area: columna1; }
-
-.columna-1 {
-  grid-area: columna-1; }
-
-.columnaDos {
-  grid-area: columnados; }
-
-.columna2 {
-  grid-area: columna2; }
-
-.columna-2 {
-  grid-area: columna-2; }
-
-.columnaTres {
-  grid-area: columnatres; }
-
-/*---CUMPLE CONSIGNAS---*/
-.parrafo1 {
-  font-size: 10px;
-  color: #004a26;
-  text-align: center; }
-
-.parrafo2 {
-  font-size: 20px;
-  color: #004a26;
-  text-align: center; }
-
-.parrafo3 {
-  font-size: 30px;
-  color: #004a26;
-  text-align: center; }
-
-.parrafo4 {
-  font-size: 40px;
-  color: #004a26;
-  text-align: center; }
-
-.parrafo5 {
-  font-size: 50px;
-  color: #004a26;
-  text-align: center; }
-
-.pink-background {
-  background-color: pink;
-  background-image: none;
-  color: black; }
-
-.violet-background {
-  background-color: violet;
-  background-image: none;
-  color: black; }
-
-.purple-background {
-  background-color: purple;
-  background-image: none;
-  color: black; }
-
-/*---ERROR---*/
+/*---PÁGINA DE ERROR---*/
 .error {
   background-color: white;
   text-align: center;
@@ -358,3 +300,43 @@ input:hover {
     position: fixed; }
     .error .derechos a {
       margin-left: 50rem; }
+
+/* ---MQ INDEX--- */
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row; }
+  .header__logo {
+    text-align: left;
+    margin: 5rem auto;
+    height: 10rem; }
+    .header__logo .logo {
+      width: 15rem; }
+  h1 {
+    font-size: 5rem; }
+  .presentacion {
+    width: auto; }
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "columnatres columnatres"  "columnauno columnados"  "columna1 columna2"; }
+    main .articulos__lugares {
+      width: 35rem;
+      height: 75rem;
+      text-align: center;
+      grid-template-areas: "titulo"  "imagen"  "texto" "boton"; }
+      main .articulos__lugares img {
+        margin-left: 5rem; }
+      main .articulos__lugares .articulos__parrafo {
+        margin-left: 5rem; }
+  .prueba {
+    position: absolute;
+    top: 45vh;
+    left: 20vw; }
+  .prueba2 {
+    position: absolute;
+    background-color: rgba(255, 246, 201, 0.8);
+    transition: 0.6s;
+    z-index: 480;
+    width: 15rem; } }

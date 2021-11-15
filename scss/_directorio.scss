@@ -1,0 +1,44 @@
+/*---COLUMNAS DIRECTORIO/INDEX---*/
+
+.articulos {
+    display: grid;
+    grid-template-areas:
+    "columnauno columnados columnatres"
+    "columna1 columna2 columnatres"
+    "columna-1 columna-2 columnatres"
+    ;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto auto ;
+}
+
+.columnaUno {
+    grid-area: columnauno;
+}
+
+.columna1 {
+    grid-area: columna1;
+}
+
+.columna-1 {
+    grid-area: columna-1;
+}
+
+.columnaDos {
+    grid-area: columnados;
+}
+
+.columna2 {
+    grid-area: columna2;
+}
+
+.columna-2 {
+    grid-area: columna-2;
+}
+
+.columnaTres {
+    grid-area: columnatres;
+}
+
+.columna3 {
+    grid-area: columna3;
+}

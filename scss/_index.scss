@@ -1,8 +1,13 @@
 .presentacion {
     background-color: $color_dos;
-    font-size: 2rem;
-    grid-area: presentacion;
+    font-size: 1.5rem;
     text-align: center;
+    width: 95%;
+    margin-left: 3rem;
+}
+
+.articulos{
+    margin-top: 15vh;
 }
 
 .articulos__lugares {
@@ -27,10 +32,11 @@
         text-align: center;
         letter-spacing: 3px;
         grid-area: titulo; 
-        
+        color: $textos;
+        font-size: 2rem;
+                    
         a{
             font-weight: bold;
-            
             &:hover {color: $textos;}
         }
     }

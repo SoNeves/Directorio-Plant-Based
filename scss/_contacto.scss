@@ -11,13 +11,16 @@
 
 .contacto {
     font-size: 2rem;
-    margin: 2rem 20rem;
+    margin: 2rem 20rem 10rem;
     text-align: center;
     
     h2 {
         text-align: center;
         font-size: 2rem;
         font-weight: 500;
+    }
+    input{
+        display: inline-block;
     }
 }
 

@@ -10,8 +10,6 @@ $color_dos: #85cc9f;
 @import "contacto";
 @import "blog";
 @import "directorio";
-@import "mq";
-
 
 
 /* ----------GENERALES---------- */
@@ -63,12 +61,6 @@ header {
     color: $textos;
 }
 
-.logo {
-    width: 30rem;
-    display: inline-block;
-    text-align: center;
-}
-
 .header__logo {
     display: flex;
     flex-direction: row;
@@ -76,22 +68,18 @@ header {
     margin-left: 20rem;
     margin-top: 2rem;
     height: 15rem;
-    
-    @include mq(970px) {
-        text-align: left;
-        margin: 5rem auto;
-        height: 10rem;
+    .logo {
+        width: 30rem;
+        display: inline-block;
+        text-align: center;
     }
 }
 
-.articulos__titulo {
-    color: $textos;
-    font-size: 2rem;
-}
+
 
 /*---BOTONES---*/
 
-button {
+.button {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5rem;
     text-align: center;
@@ -181,73 +169,7 @@ input:hover {
     transform: scale(1.1);
 }
 
-/*---COLUMNAS DIRECTORIO/INDEX---*/
-
-.articulos {
-    display: grid;
-    grid-template-areas:
-    "columnauno columnados columnatres"
-    "columna1 columna2 columnatres"
-    "columna-1 columna-2 columnatres"
-    ;
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: auto;
-}
-
-.columnaUno {
-    grid-area: columnauno;
-}
-
-.columna1 {
-    grid-area: columna1;
-}
-
-.columna-1 {
-    grid-area: columna-1;
-}
-
-.columnaDos {
-    grid-area: columnados;
-}
-
-.columna2 {
-    grid-area: columna2;
-}
-
-.columna-2 {
-    grid-area: columna-2;
-}
-
-.columnaTres {
-    grid-area: columnatres;
-}
-
-
-/*---CUMPLE CONSIGNAS---*/
-
-@for $i from 1 to 6 {
-    .parrafo#{$i}{
-        font-size: 10px * $i;
-        color: $textos;
-        text-align: center;
-    }
-}
-
-$colors: (
-    color1: pink,
-    color2: violet,
-    color3: purple,
-);
-
-@each $key, $value in $colors {
-    .#{$value}-background {
-        background-color: $value; 
-        background-image: none;
-        color: black;
-    }
-} 
-
-/*---ERROR---*/
+/*---PÁGINA DE ERROR---*/
 
 .error{
     background-color: white;
@@ -272,3 +194,4 @@ $colors: (
 }
 
 
+@import "mq";
