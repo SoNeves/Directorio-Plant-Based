@@ -1,4 +1,9 @@
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 360px) and (max-width: 768px){
+    
+    body{
+        width: 100vw;
+        margin-left: 0px;
+    }
     
     header{
         display: flex;
@@ -27,6 +32,7 @@
     
     .articulos{
         display: inline-block;
+        width: 100vw;
         
         .divisionArticulosV{
             display: none;
@@ -44,10 +50,6 @@
     .sobreMi{
         width: 70rem;
         border-radius: 20%;
-    }
-    
-    .contacto{
-        
     }
     
     .divisionFooter{
@@ -76,5 +78,11 @@
         transition: 0.6s;
         z-index: 480;
         width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    header{
+        width: 50px;
     }
 }

@@ -27,6 +27,7 @@ html {
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: $background;
+    width: 100vw;
 }
 
 h1 {
@@ -64,6 +65,7 @@ header {
         margin-left: 20rem;
         margin-top: 2rem;
         height: 15rem;
+        margin-right: 0px;
         .logo {
             width: 30rem;
             display: inline-block;
