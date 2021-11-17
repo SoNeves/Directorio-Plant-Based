@@ -1,51 +1,70 @@
-/* ---MQ INDEX--- */
-
 @media only screen and (max-width: 768px){
     
     header{
         display: flex;
         flex-direction: row;
-    }
-        .header__logo {
-        text-align: left;
-        margin: 5rem auto;
-        height: 10rem;
-        .logo {
-            width: 15rem;
+        width: 50px;
+        text-align: center;
+        
+        .header__logo{
+            margin-left: 10rem;
         }
-    }
-    h1 {
-        font-size: 5rem;
-    }
-    .presentacion{
-        width: auto;
+            .logo {
+                width: 200px;
+                margin-left: auto;
+            }
+            
+        h1 {
+            font-size: 5rem;
+        }
+        
     }
     
-    main{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        grid-template-areas:"columnatres columnatres" 
-                            "columnauno columnados" 
-                            "columna1 columna2";
-                                
-            .articulos__lugares {
-                width: 35rem;
-                height: 75rem;
-                text-align: center;
-                grid-template-areas:"titulo" 
-                                    "imagen" 
-                                    "texto"
-                                    "boton";
-                            
-                    img{
-                    margin-left: 5rem;
-                    }
-                    .articulos__parrafo{
-                        margin-left: 5rem;
-                    }
-            }
+    .buscador{
+        margin: 5rem 75rem 2rem 7rem;
+        width: 60%;
+    }
+    
+    .articulos{
+        display: inline-block;
+        
+        .divisionArticulosV{
+            display: none;
         }
+    }
+    
+    .blog{
+        display: inline-block;
+        
+        .divisionArticulosV{
+            display: none;
+        }
+    }
+    
+    .sobreMi{
+        width: 70rem;
+        border-radius: 20%;
+    }
+    
+    .contacto{
+        
+    }
+    
+    .divisionFooter{
+        width: 50rem;
+        margin-left: 15rem;
+    }
+
+    footer{
+        text-align: center;
+        width: 50rem;
+        grid-template-areas: "news"
+                            "nav"
+                            "copy";
+        margin-left: 15rem;                        
+    
+    }
+
     .prueba {
         position: absolute;
         top: 45vh;
@@ -58,5 +77,4 @@
         z-index: 480;
         width: 15rem;
     }
-
 }

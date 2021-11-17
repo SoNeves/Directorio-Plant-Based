@@ -45,37 +45,37 @@ h4 {
     color: $textos;
 }
 
+
 /*---HEADER---*/
 
 header {
     grid-area: header;
+    text-align: center;
         
     nav {
         margin-bottom: 1rem;
         text-align: center;
     }
-}
-
-.navbar__link--style{
-    font-weight: bold;
-    color: $textos;
-}
-
-.header__logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 20rem;
-    margin-top: 2rem;
-    height: 15rem;
-    .logo {
-        width: 30rem;
-        display: inline-block;
-        text-align: center;
+    
+    .header__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 20rem;
+        margin-top: 2rem;
+        height: 15rem;
+        .logo {
+            width: 30rem;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    
+    .navbar__link--style{
+        font-weight: bold;
+        color: $textos;
     }
 }
-
-
 
 /*---BOTONES---*/
 
@@ -124,6 +124,7 @@ header{
 
 .buscador{
     grid-area: buscador;
+    display: inline-block;
 }
 
 .divisionArticulosV{
