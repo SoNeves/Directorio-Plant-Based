@@ -3,9 +3,9 @@
 .articulos {
     display: grid;
     grid-template-areas:
-    "columnauno columnados columnatres"
-    "columna1 columna2 columnatres"
-    "columna-1 columna-2 columnatres"
+    "columnauno columnados"
+    "columna1 columna2"
+    "columna-1 columna-2"
     ;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: auto auto ;

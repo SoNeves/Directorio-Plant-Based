@@ -1,29 +1,35 @@
-.blog__articulos {
-    width: auto;
-    height: auto;
-    text-align: center;
-    font-size: 2rem;
-    border: solid 2px #004a26;
-    border-radius: 20px;
-    margin: 1rem;
-    
-    .articulos__parrafo {
-        font-size: 1.7rem;
-        display: inline-block;
-        color: #004a26;
-        overflow: hidden;
-        width: auto;
-        height: auto;
-    }
-
-    img {
-        width: 45rem;
-        height: 30rem;
-        border-radius: 20px;
-    }
-}
-
 .blog {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(2, 2fr);
+    
+    .blog__articulos {
+        width: auto;
+        height: auto;
+        text-align: center;
+        font-size: 2rem;
+        margin: 5rem;
+        
+        .articulos__parrafo {
+            font-size: 1.7rem;
+            display: inline-block;
+            color: #004a26;
+            overflow: hidden;
+            width: auto;
+            height: auto;
+        }
+    
+        img {
+            width: 45rem;
+            height: 30rem;
+            border-radius: 20px;
+        }
+        
+        .divisionArticulosV{
+        
+            margin-left: 85vh;
+        }
+    }
+    
 }
+
+

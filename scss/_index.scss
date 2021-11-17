@@ -1,66 +1,56 @@
-.presentacion {
-    background-color: $color_dos;
-    font-size: 1.5rem;
-    text-align: center;
-    width: 95%;
-    margin-left: 3rem;
-}
+.articulos {
+    grid-area: articulos;
+    margin: 0 10rem;
 
-.articulos{
-    margin-top: 15vh;
-}
-
-.articulos__lugares {
-    width: 55rem;
-    height: 40rem;
-    border: solid 2px $textos;
-    border-radius: 20px;
-    display: block;
-    margin: 1rem;
-    display: grid;
-    grid-template-areas: "titulo titulo" "imagen texto" "boton boton";
-    
-    img{
-        width: 25rem;
-        height: 30rem;
-        border-radius: 20px;
-        margin: 1rem;
-        grid-area: imagen;
-    }
-    
-    .articulos__titulo {
-        text-align: center;
-        letter-spacing: 3px;
-        grid-area: titulo; 
-        color: $textos;
-        font-size: 2rem;
-                    
-        a{
-            font-weight: bold;
-            &:hover {color: $textos;}
+        .articulos__lugares {
+        width: 55rem;
+        height: 40rem;
+        //border: solid 2px $textos;
+        border-radius: 10px;
+        display: block;
+        margin: 5rem;
+        display: grid;
+        grid-template-areas: "titulo titulo" 
+                            "imagen texto"
+                            "boton boton";
+        
+        img{
+            width: 25rem;
+            height: 30rem;
+            border-radius: 20px;
+            margin: 1rem;
+            grid-area: imagen;
+        }
+        
+        .articulos__titulo {
+            text-align: center;
+            letter-spacing: 3px;
+            grid-area: titulo; 
+            color: $textos;
+            font-size: 2rem;
+                        
+            a{
+                font-weight: bold;
+                &:hover {color: $textos;}
+            }
+        }
+        
+        button {
+            width: 20rem;
+        }
+        
+        .articulos__parrafo {
+            overflow: hidden;
+            font-size: 1.7rem;
+            display: inline-block;
+            padding: 5px;
+            margin: 5px;
+            width: 25rem;
+            height: 30rem;
+            text-align: justify;
+            grid-area: texto;
         }
     }
-    
-    button {
-        width: 20rem;
-    }
-    
-    .articulos__parrafo {
-        overflow: hidden;
-    }
 }
 
-.articulos__parrafo {
-    font-size: 1.7rem;
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
-    width: 25rem;
-    height: 30rem;
-    text-align: justify;
-    grid-area: texto;
-}
 
-main {
-    grid-area: main;
-}
