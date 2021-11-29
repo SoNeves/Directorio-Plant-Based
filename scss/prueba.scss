@@ -169,29 +169,28 @@ footer {
             font-size: 2rem;
         }
     }
-}
-
-.contactoFooter{
-    position: fixed;
-}
-
-.navFooter {
-    color: $textos;
-    font-size: 2rem;
-    text-align: center;
-    
-    a {
-        color: $textos;
-        align-items: flex-end;
+    .contactoFooter{
+        position: fixed;
     }
-}
-
-.copy {
-    color: $textos;
-    font-size: 2rem;
-    justify-content: center;
-    margin: auto;
-    grid-area: copy;
+    
+    .navFooter {
+        color: $textos;
+        font-size: 2rem;
+        text-align: center;
+        
+        a {
+            color: $textos;
+            align-items: flex-end;
+        }
+    }
+    
+    .copy {
+        color: $textos;
+        font-size: 2rem;
+        justify-content: center;
+        margin: auto;
+        grid-area: copy;
+    }
 }
 
 input:hover {

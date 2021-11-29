@@ -85,8 +85,8 @@
 
 @media only screen and (max-width: 320px){
         body{
-            width: 100vw;
             text-align: center;
+            margin-left: 0rem;
         }
         header{
             display: flex;
@@ -96,26 +96,56 @@
             
             .header__logo{
                 margin-left: 0rem;
-            }
+                height: 10rem;
+                
                 .logo {
                     width: 100px;
-                    margin-left: auto;
+                    margin-left: 0;
                 }
+            }
                 
             h1 {
-                font-size: 5rem;
+                font-size: 30px;
             }
             
         }
-        .buscador{
-            margin-top: 2rem;
-            margin-left: 10rem;
-            text-align: center;
+        .navbar{
+            margin: 2rem 0rem 0rem 2rem;
+            
+            .container-fluid{
+                display: inline-block;
+            }
         }
         .articulos{
             display: inline-block;
             width: 100vw;
             margin-left: 0px;
+            
+            
+            .articulos__lugares{
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 15rem;
+                    height: 20rem;
+                    margin-left: 50px;
+                }
+            }
+            
+            .articulos__titulo a{
+                margin-right: 295px;
+            }
+            
+            .articulos__parrafo{
+                font-size: 15px;
+                margin-right: 300px;
+                
+            }
+            
+            button{
+                margin-top: 3px;
+                margin-right: 315px;
+            }
             
             .divisionArticulosV{
                 display: none;
@@ -124,28 +154,84 @@
         .blog{
             display: inline-block;
             
+            .blog__articulos{
+                img{
+                    width: 25rem;
+                    height: 15rem;
+                    margin-right: 300px;
+                }
+                
+                .articulos__titulo a{
+                    margin-right: 295px;
+                }
+                
+                .articulos__parrafo{
+                    font-size: 15px;
+                    margin-right: 300px;
+                    
+                }
+                
+                button{
+                    margin-top: 3px;
+                    margin-right: 315px;
+                }
+            }
+            
             .divisionArticulosV{
                 display: none;
             }
         }
         .sobreMi{
-            width: 70rem;
-            border-radius: 20%;
+            text-align: center;
+            width: 30rem;
+            border-radius: 25%;
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 15px;
+                margin-bottom: 2rem;
+            }
+            img{
+                width: 18rem;
+                height: 25rem;
+                order: -1;
+                margin-bottom: 2rem;
+            }
         }
         
         .divisionFooter{
-            width: 50rem;
+            width: 25rem;
             margin-left: 3rem;
+        }
+        
+        .contacto{
+            display: inline-block;
+            margin: 20px 200px 20px 45px;
+            font-size: 15px;
         }
     
         footer{
             text-align: center;
-            width: 50rem;
+            width: 10rem;
             grid-template-areas: "news"
                                 "nav"
                                 "copy";
-            margin-left: 3rem;                        
-        
+            margin-left: 6rem;    
+            .news {
+                font-size: 15px;
+                color: $textos;
+                
+                h3 {
+                    font-size: 15px;
+                }
+            }   
+            .navFooter a{
+                display: none;
+            }       
+            .copy{
+                font-size: 15px;
+                margin-bottom: 0rem;
+            }      
         }
     
 }
